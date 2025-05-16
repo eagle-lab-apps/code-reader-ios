@@ -1,0 +1,6 @@
+framework module CodeReader {
+  umbrella header "CodeReader.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CodeReader
+@_exported import CodeReader
+import Foundation
+import Swift
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public struct Barcode {
+  public let type: Swift.String
+  public let boundingBox: CoreFoundation.CGRect
+}
+public class BarcodeReader {
+  public init()
+  public func scan(image: UIKit.UIImage, in imageView: UIKit.UIImageView? = nil, completion: @escaping ([CodeReader.Barcode]?) -> Swift.Void)
+  public func setDebugMode(enabled: Swift.Bool)
+  @objc deinit
+}

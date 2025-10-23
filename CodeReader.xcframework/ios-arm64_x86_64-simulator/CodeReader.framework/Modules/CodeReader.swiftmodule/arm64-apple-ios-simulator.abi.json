@@ -26,6 +26,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -167,6 +177,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -340,13 +360,44 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sasa\/Documents\/workspace\/mobile\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Logger.swift",
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Extensions\/CGImage+Optimize.swift",
+      "kind": "FloatLiteral",
+      "offset": 270,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Extensions\/CGImage+Optimize.swift",
+      "kind": "FloatLiteral",
+      "offset": 297,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Extensions\/CGImage+Optimize.swift",
+      "kind": "FloatLiteral",
+      "offset": 323,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 284,
       "length": 5,

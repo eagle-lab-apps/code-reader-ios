@@ -26,6 +26,26 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -40,6 +60,36 @@
         "printedName": "os.log",
         "declKind": "Import",
         "moduleName": "CodeReader"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -76,7 +126,6 @@
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -97,6 +146,48 @@
                 "moduleName": "CodeReader",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CodeReader7BarcodeV4typeSSvs",
+                "mangledName": "$s10CodeReader7BarcodeV4typeSSvs",
+                "moduleName": "CodeReader",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CodeReader7BarcodeV4typeSSvM",
+                "mangledName": "$s10CodeReader7BarcodeV4typeSSvM",
+                "moduleName": "CodeReader",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -120,7 +211,6 @@
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -141,6 +231,48 @@
                 "moduleName": "CodeReader",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CodeReader7BarcodeV11boundingBoxSo6CGRectVvs",
+                "mangledName": "$s10CodeReader7BarcodeV11boundingBoxSo6CGRectVvs",
+                "moduleName": "CodeReader",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CodeReader7BarcodeV11boundingBoxSo6CGRectVvM",
+                "mangledName": "$s10CodeReader7BarcodeV11boundingBoxSo6CGRectVvM",
+                "moduleName": "CodeReader",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           }
@@ -167,6 +299,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -215,8 +357,35 @@
           },
           {
             "kind": "Function",
+            "name": "setDebugMode",
+            "printedName": "setDebugMode(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CodeReader07BarcodeB0C12setDebugMode7enabledySb_tF",
+            "mangledName": "$s10CodeReader07BarcodeB0C12setDebugMode7enabledySb_tF",
+            "moduleName": "CodeReader",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "scan",
-            "printedName": "scan(image:in:completion:)",
+            "printedName": "scan(image:imageView:options:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -245,9 +414,24 @@
                 "usr": "s:Sq"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CodeReader.BarcodeOption]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BarcodeOption",
+                    "printedName": "CodeReader.BarcodeOption",
+                    "usr": "s:10CodeReader13BarcodeOptionO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "([CodeReader.Barcode]?) -> ()",
+                "printedName": "([CodeReader.Barcode]) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -256,59 +440,24 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[CodeReader.Barcode]?",
+                    "name": "Array",
+                    "printedName": "[CodeReader.Barcode]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[CodeReader.Barcode]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Barcode",
-                            "printedName": "CodeReader.Barcode",
-                            "usr": "s:10CodeReader7BarcodeV"
-                          }
-                        ],
-                        "usr": "s:Sa"
+                        "name": "Barcode",
+                        "printedName": "CodeReader.Barcode",
+                        "usr": "s:10CodeReader7BarcodeV"
                       }
                     ],
-                    "usr": "s:Sq"
+                    "usr": "s:Sa"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:10CodeReader07BarcodeB0C4scan5image2in10completionySo7UIImageC_So0H4ViewCSgySayAA0C0VGSgctF",
-            "mangledName": "$s10CodeReader07BarcodeB0C4scan5image2in10completionySo7UIImageC_So0H4ViewCSgySayAA0C0VGSgctF",
-            "moduleName": "CodeReader",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setDebugMode",
-            "printedName": "setDebugMode(enabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10CodeReader07BarcodeB0C12setDebugMode7enabledySb_tF",
-            "mangledName": "$s10CodeReader07BarcodeB0C12setDebugMode7enabledySb_tF",
+            "usr": "s:10CodeReader07BarcodeB0C4scan5image0E4View7options10completionySo7UIImageC_So0iF0CSgSayAA0C6OptionOGySayAA0C0VGctF",
+            "mangledName": "$s10CodeReader07BarcodeB0C4scan5image0E4View7options10completionySo7UIImageC_So0iF0CSgSayAA0C6OptionOGySayAA0C0VGctF",
             "moduleName": "CodeReader",
             "declAttributes": [
               "AccessControl",
@@ -340,17 +489,228 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BarcodeOption",
+        "printedName": "BarcodeOption",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "standard",
+            "printedName": "standard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CodeReader.BarcodeOption.Type) -> CodeReader.BarcodeOption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BarcodeOption",
+                    "printedName": "CodeReader.BarcodeOption",
+                    "usr": "s:10CodeReader13BarcodeOptionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CodeReader.BarcodeOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeOption",
+                        "printedName": "CodeReader.BarcodeOption",
+                        "usr": "s:10CodeReader13BarcodeOptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10CodeReader13BarcodeOptionO8standardyA2CmF",
+            "mangledName": "$s10CodeReader13BarcodeOptionO8standardyA2CmF",
+            "moduleName": "CodeReader"
+          },
+          {
+            "kind": "Var",
+            "name": "sharpness",
+            "printedName": "sharpness",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CodeReader.BarcodeOption.Type) -> (CoreGraphics.CGFloat) -> CodeReader.BarcodeOption",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> CodeReader.BarcodeOption",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeOption",
+                        "printedName": "CodeReader.BarcodeOption",
+                        "usr": "s:10CodeReader13BarcodeOptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CodeReader.BarcodeOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeOption",
+                        "printedName": "CodeReader.BarcodeOption",
+                        "usr": "s:10CodeReader13BarcodeOptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10CodeReader13BarcodeOptionO9sharpnessyAC14CoreFoundation7CGFloatVcACmF",
+            "mangledName": "$s10CodeReader13BarcodeOptionO9sharpnessyAC12CoreGraphics7CGFloatVcACmF",
+            "moduleName": "CodeReader"
+          },
+          {
+            "kind": "Var",
+            "name": "angle",
+            "printedName": "angle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CodeReader.BarcodeOption.Type) -> (CoreGraphics.CGFloat) -> CodeReader.BarcodeOption",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> CodeReader.BarcodeOption",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeOption",
+                        "printedName": "CodeReader.BarcodeOption",
+                        "usr": "s:10CodeReader13BarcodeOptionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CodeReader.BarcodeOption.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeOption",
+                        "printedName": "CodeReader.BarcodeOption",
+                        "usr": "s:10CodeReader13BarcodeOptionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10CodeReader13BarcodeOptionO5angleyAC14CoreFoundation7CGFloatVcACmF",
+            "mangledName": "$s10CodeReader13BarcodeOptionO5angleyAC12CoreGraphics7CGFloatVcACmF",
+            "moduleName": "CodeReader"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10CodeReader13BarcodeOptionO",
+        "mangledName": "$s10CodeReader13BarcodeOptionO",
+        "moduleName": "CodeReader",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sasa\/Documents\/workspace\/mobile\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Logger.swift",
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Extensions\/CGImage+Sharpen.swift",
+      "kind": "FloatLiteral",
+      "offset": 235,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/Utils\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 284,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mabo\/development\/code-reader-ios\/CodeReader\/CodeReader\/Resources\/BarcodeReader.swift",
+      "kind": "StringLiteral",
+      "offset": 262,
+      "length": 19,
+      "value": "\"com.barcodereader\""
     }
   ]
 }

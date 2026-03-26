@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CodeReader
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CodeReader
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 @_exported import CodeReader
 import Foundation
 import Swift
@@ -12,12 +13,20 @@ import _SwiftConcurrencyShims
 import os.log
 import os
 public struct Barcode {
-  public let type: Swift.String
-  public let boundingBox: CoreFoundation.CGRect
+  public var type: Swift.String
+  public var boundingBox: CoreFoundation.CGRect
 }
 public class BarcodeReader {
   public init()
-  public func scan(image: UIKit.UIImage, in imageView: UIKit.UIImageView? = nil, completion: @escaping ([CodeReader.Barcode]?) -> Swift.Void)
   public func setDebugMode(enabled: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func scan(image: UIKit.UIImage, imageView: UIKit.UIImageView? = nil, options: [CodeReader.BarcodeOption] = [.standard], completion: @escaping ([CodeReader.Barcode]) -> Swift.Void)
+  #endif
   @objc deinit
+}
+public enum BarcodeOption {
+  case standard
+  case sharpness(CoreFoundation.CGFloat)
+  case angle(CoreFoundation.CGFloat)
+  case grayscale
 }
